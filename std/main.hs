@@ -13,6 +13,9 @@ main = do
     print "succ: "
     print (succ 1)
 
+    print "pred: "
+    print (pred 2)
+
     print "div: "
     print (div 7 2)
 
