@@ -28,3 +28,11 @@ main = do
             else "E" 
         | 
         x <- [1..10]])
+
+    print "matrix"
+    print [ replicate 3 x | x <- [1..3]]
+
+    let nums = [1..10]
+
+    print "matrix 2"
+    print [ take 3 (drop x nums) | x <- [0..2] ]
