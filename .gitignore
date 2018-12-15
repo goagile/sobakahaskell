@@ -1,6 +1,12 @@
+
 */*.hi
 */*.o
+
 /tmp
 /tmp/*
+
 */tmp
 */tmp/*
+
+**/tmp
+**/tmp/*
