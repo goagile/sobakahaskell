@@ -1,8 +1,13 @@
 -- lists
 
+import Data.List
+
 main = do
-    let names = ["Petro", "Dancig", "Joe", "Helga"]
-    
+
+    let first = "Zoho":["Petro", "Dancig", "Joe", "Helga"] ++ ["Alice"]
+
+    let names = sort first
+
     print "names: "
     print names
 
