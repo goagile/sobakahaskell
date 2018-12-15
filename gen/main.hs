@@ -36,3 +36,13 @@ main = do
 
     print "matrix 2"
     print [ take 3 (drop x nums) | x <- [0..2] ]
+
+    print "zip: "
+    print (zip [1..10] "ABC")
+
+    print "10 pair"
+    print (take 10 [
+        (a, b) 
+        | 
+        a <- [1..10], 
+        b <- [1..10]])
