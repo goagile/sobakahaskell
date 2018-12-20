@@ -1,4 +1,4 @@
 
 
 newproj:
-	cp -r ./new ${NEWNAME}
+	$(shell ./newproj.bash)
