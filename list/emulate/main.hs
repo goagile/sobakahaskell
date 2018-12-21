@@ -39,6 +39,18 @@ main = do
     putStrLn ("take' 2 [1, 2, 3] = " ++ show (take' 2 [1, 2, 3]))
     putStrLn ""
 
+    putStrLn "drop':"
+    putStrLn ("drop' 2 [1, 2, 3] = " ++ show (drop' 2 [1, 2, 3]))
+    putStrLn ""
+
+    putStrLn "rev:"
+    putStrLn ("rev [1,2,3] = " ++ show (rev [1, 2, 3]))
+    putStrLn ""
+
+    putStrLn "repeat':"
+    putStrLn ("take' 5 (repeat' 'A') = " ++ show (take' 5 (repeat' 'A')))
+    putStrLn ""
+
 
 -- len
 len :: [a] -> Int
@@ -94,3 +106,21 @@ take' n _
     | n <= 0 = []
 take' _ [] = []
 take' n (x:xs) = x : take' (n-1) xs
+
+
+-- drop'
+drop' :: Int -> [a] -> [a]
+drop' n a
+    | n <= 0 = a
+drop' n (x:xs) = drop' (n-1) xs
+
+
+-- rev
+rev :: [a] -> [a]
+rev [] = []
+rev (x:xs) = rev xs ++ [x]
+
+
+-- repeat'
+repeat' :: a -> [a]
+repeat' x = x : repeat' x
